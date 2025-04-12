@@ -11,3 +11,6 @@ D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\Airbnb.Application.
 D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\refint\Airbnb.Application.dll
 D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\Airbnb.Application.pdb
 D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\ref\Airbnb.Application.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.DATA.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.DATA.pdb
+D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\Airbnb.A.1C864EAA.Up2Date
