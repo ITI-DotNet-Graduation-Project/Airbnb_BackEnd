@@ -1,0 +1,13 @@
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.deps.json
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.pdb
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.csproj.AssemblyReference.cache
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.AssemblyInfoInputs.cache
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.AssemblyInfo.cs
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.csproj.CoreCompileInputs.cache
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.sourcelink.json
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\refint\Airbnb.DATA.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.pdb
+D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\ref\Airbnb.DATA.dll
