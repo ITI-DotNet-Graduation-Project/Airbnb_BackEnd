@@ -15,6 +15,8 @@
         public virtual ICollection<Availability> Availabilities { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
+        public int CategoryId { get; set; }
+        public virtual PropertyCategory Category { get; set; }
         public double? AverageRating => Reviews?.Any() == true ? Reviews.Average(r => r.Rating) : null;
     }
 }

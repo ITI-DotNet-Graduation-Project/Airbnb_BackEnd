@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Airbnb.DATA.models.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace Airbnb.DATA.models
 {
@@ -10,6 +11,7 @@ namespace Airbnb.DATA.models
         public virtual ICollection<Booking> Bookings { get; set; }
         public virtual ICollection<Property> Properties { get; set; }
         public virtual ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<RefreshToken> RefreshTokens { get; set; }
 
     }
 }
