@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="Hangfire" Version="1.8.18" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.15" />
     <PackageReference Include="microsoft.EntityFrameworkCore.Design" Version="9.0.4">
@@ -24,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Airbnb.Application\Airbnb.Application.csproj" />
+    <ProjectReference Include="..\Airbnb.DATA\Airbnb.DATA.csproj" />
     <ProjectReference Include="..\Airbnb.Infrastructure\Airbnb.Infrastructure.csproj" />
   </ItemGroup>
 

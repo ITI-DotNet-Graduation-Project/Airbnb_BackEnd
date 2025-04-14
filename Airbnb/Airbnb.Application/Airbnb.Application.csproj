@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="Hangfire.Core" Version="1.8.18" />
     <PackageReference Include="LogIntelligence.Extensions.Logging" Version="1.0.0" />
@@ -29,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Airbnb.DATA\Airbnb.DATA.csproj" />
+    <ProjectReference Include="..\Airbnb.Infrastructure\Airbnb.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
