@@ -1,5 +1,7 @@
 
 using Airbnb.Application;
+using Airbnb.Application.Services.Abstract;
+using Airbnb.Application.Services.Implementation;
 using Airbnb.Application.Settings;
 using Airbnb.DATA.models;
 using Airbnb.DATA.models.Identity;
@@ -13,6 +15,9 @@ using Microsoft.IdentityModel.Tokens;
 using School.Application.SeedRoles;
 using System.Text;
 using System.Threading.RateLimiting;
+using Airbnb.Application.Map;
+using Airbnb.Infrastructure.Abstract;
+using Airbnb.Infrastructure.Repos;
 
 namespace Airbnb.API
 {
@@ -97,6 +102,22 @@ namespace Airbnb.API
                 }
                 );
             });
+
+            /////
+            builder.Services.AddScoped<IPropertyService, PropertyService>();
+            builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>)); // This fixes the error
+            builder.Services.AddScoped<IPropertyService, PropertyService>();
+            builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
+            builder.Services.AddScoped<IPropertyImageService, PropertyImageService>();
+            builder.Services.AddScoped<IPropertyCategoryService, PropertyCategoryService>();
+
+            builder.Services.AddScoped<IReviewService, ReviewService>();
+
+            builder.Services.AddScoped<IBookingService, BookingService>();
+
+            // if using AutoMapper
+
 
 
             builder.Services.AddCors();

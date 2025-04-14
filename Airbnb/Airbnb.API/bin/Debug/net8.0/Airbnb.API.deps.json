@@ -9,7 +9,9 @@
       "Airbnb.API/1.0.0": {
         "dependencies": {
           "Airbnb.Application": "1.0.0",
+          "Airbnb.DATA": "1.0.0",
           "Airbnb.Infrastructure": "1.0.0",
+          "AutoMapper": "14.0.0",
           "Hangfire": "1.8.18",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "OneOf": "3.0.271",
@@ -20,6 +22,17 @@
         },
         "runtime": {
           "Airbnb.API.dll": {}
+        }
+      },
+      "AutoMapper/14.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "9.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.0.0"
+          }
         }
       },
       "Azure.Core/1.38.0": {
@@ -1542,14 +1555,7 @@
         }
       },
       "System.Numerics.Vectors/4.5.0": {},
-      "System.Reflection.Metadata/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.Reflection.Metadata.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
+      "System.Reflection.Metadata/8.0.1": {},
       "System.Runtime.Caching/6.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.1"
@@ -1689,6 +1695,8 @@
       "Airbnb.Application/1.0.0": {
         "dependencies": {
           "Airbnb.DATA": "1.0.0",
+          "Airbnb.Infrastructure": "1.0.0",
+          "AutoMapper": "14.0.0",
           "FluentValidation": "11.11.0",
           "Hangfire.Core": "1.8.18",
           "LogIntelligence.Extensions.Logging": "1.0.0",
@@ -1711,6 +1719,7 @@
       },
       "Airbnb.DATA/1.0.0": {
         "dependencies": {
+          "AutoMapper": "14.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
           "Microsoft.Extensions.Identity.Stores": "9.0.4"
         },
@@ -1724,6 +1733,7 @@
       "Airbnb.Infrastructure/1.0.0": {
         "dependencies": {
           "Airbnb.DATA": "1.0.0",
+          "AutoMapper": "14.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.15"
         },
         "runtime": {
@@ -1740,6 +1750,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/14.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "path": "automapper/14.0.0",
+      "hashPath": "automapper.14.0.0.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",
