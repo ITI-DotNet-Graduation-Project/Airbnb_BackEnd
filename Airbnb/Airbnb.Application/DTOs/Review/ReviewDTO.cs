@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Airbnb.Application.DTOs.Review
+﻿namespace Airbnb.Application.DTOs.Review
 {
+
     public class ReviewDTO
     {
         public int Id { get; set; }

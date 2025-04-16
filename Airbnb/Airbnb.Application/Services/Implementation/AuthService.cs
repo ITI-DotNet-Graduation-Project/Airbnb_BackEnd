@@ -36,7 +36,7 @@ namespace Airbnb.Application.Services.Implementation
         }
         public async Task<OneOf<AuthResponse?, Error>> GetTokenAsync(string email, string password)
         {
-            //check email
+
             var user = await _userManager.FindByEmailAsync(email);
             if (user is null)
                 return UserErrors.InvalidCredential;
@@ -44,7 +44,7 @@ namespace Airbnb.Application.Services.Implementation
             if (result.Succeeded)
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
-                var (taken, expiresIn) = _jwtProvider.GenerateTaken(user, userRoles);
+                var (taken, expiresIn) = _jwtProvider.GenerateToken(user, userRoles);
 
                 var refreshToken = GenerateRefreshToken();
                 var refreshTokenExpiration = DateTime.UtcNow.AddDays(_refreshTokenExpiryDays);
@@ -55,7 +55,7 @@ namespace Airbnb.Application.Services.Implementation
                 });
                 await _userManager.UpdateAsync(user);
 
-                return new AuthResponse((user.Id).ToString(), user.Email, user.FirstName + " " + user.LastName, taken, expiresIn, refreshToken, refreshTokenExpiration);
+                return new AuthResponse((user.Id).ToString(), user.Email, user.FirstName + " " + user.LastName, taken, expiresIn, refreshToken, refreshTokenExpiration, userRoles.FirstOrDefault());
             }
 
             var error =
@@ -85,9 +85,9 @@ namespace Airbnb.Application.Services.Implementation
             userRefreshToken.RevokedIn = DateTime.UtcNow;
 
             var userRoles = await _userManager.GetRolesAsync(user);
-            var (newToken, expiresIn) = _jwtProvider.GenerateTaken(user, userRoles);
+            var (newToken, expiresIn) = _jwtProvider.GenerateToken(user, userRoles);
 
-            //generate new refresh taken
+
             var newRefreshToken = GenerateRefreshToken();
             var refreshTokenExpiration = DateTime.UtcNow.AddDays(_refreshTokenExpiryDays);
             user.RefreshTokens.Add(new RefreshToken
@@ -97,7 +97,7 @@ namespace Airbnb.Application.Services.Implementation
             });
             await _userManager.UpdateAsync(user);
 
-            return new AuthResponse((user.Id).ToString(), user.Email, user.FirstName + " " + user.LastName, newToken, expiresIn, newRefreshToken, refreshTokenExpiration);
+            return new AuthResponse((user.Id).ToString(), user.Email, user.FirstName + " " + user.LastName, newToken, expiresIn, newRefreshToken, refreshTokenExpiration, userRoles.FirstOrDefault());
 
         }
         public async Task<OneOf<bool, Error>> RevokeRefreshTokenAsync(string token, string refreshToken)
@@ -132,14 +132,25 @@ namespace Airbnb.Application.Services.Implementation
             var result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
+                if (!await _roleManager.RoleExistsAsync(request.Role))
+                {
+                    var roleError = result.Errors.First();
+                    return new Error(roleError.Code, roleError.Description, StatusCodes.Status400BadRequest);
+                }
+
+                var roleResult = await _userManager.AddToRoleAsync(user, request.Role);
+                if (!roleResult.Succeeded)
+                {
+                    var roleError = roleResult.Errors.First();
+                    return new Error(roleError.Code, roleError.Description, StatusCodes.Status400BadRequest);
+                }
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
 
-                //Start Send Email
                 await SendEmailConfirmation(user, code);
-                //End Send Email
+
                 return UserErrors.SendEmail;
-                //return code;
+
             }
             var error = result.Errors.First();
             return new Error(error.Code, error.Description, StatusCodes.Status400BadRequest);
@@ -224,28 +235,28 @@ namespace Airbnb.Application.Services.Implementation
             Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
         private async Task SendEmailConfirmation(User user, string code)
         {
-            var origin = _httpContextAccessor.HttpContext?.Request.Headers.Origin;
+            var origin = "http://localhost:4200";
             var TempPath = $"{Directory.GetCurrentDirectory()}/Templates/EmailConfirmation.html";
             StreamReader streamReader = new StreamReader(TempPath);
             var body = streamReader.ReadToEnd();
             streamReader.Close();
             body = body
                 .Replace("[name]", $"{user.FirstName + " " + user.LastName} ")
-                .Replace("[action_url]", $"{origin}/api/auth/confirm-email?userId={user.Id}&code={code}");
+                .Replace("[action_url]", $"{origin}/confirm-email?userId={user.Id}&code={code}");
 
             BackgroundJob.Enqueue(() => _emailSender.SendEmailAsync(user.Email!, "Confirm your email", body));
             await Task.CompletedTask;
         }
         private async Task SendResetPassword(User user, string code)
         {
-            var origin = _httpContextAccessor.HttpContext?.Request.Headers.Origin;
+            var origin = "http://localhost:4200";
             var TempPath = $"{Directory.GetCurrentDirectory()}/Templates/ForgetPassword.html";
             StreamReader streamReader = new StreamReader(TempPath);
             var body = streamReader.ReadToEnd();
             streamReader.Close();
             body = body
                 .Replace("{{name}}", $"{user.FirstName + " " + user.LastName} ")
-                .Replace("{{action_url}}", $"{origin}/api/auth/forget-password?email={user.Email}&code={code}");
+                .Replace("{{action_url}}", $"{origin}/forget-password?email={user.Email}&code={code}");
 
             BackgroundJob.Enqueue(() => _emailSender.SendEmailAsync(user.Email!, "Reset your password", body));
             await Task.CompletedTask;

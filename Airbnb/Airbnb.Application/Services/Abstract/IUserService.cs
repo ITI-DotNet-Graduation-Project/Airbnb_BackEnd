@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Airbnb.Application.Errors;
-using OneOf;
+﻿using Airbnb.Application.DTOs.User;
+using Airbnb.DATA.models;
 namespace Airbnb.Application.Services.Abstract
 {
-    internal interface IUserService
+    public interface IUserService
     {
+        public Task<User> UpdateUserProfileAsync(int userId, UpdateProfileDto updateProfileDto);
+        Task<User> GetUserByIdAsync(int userId);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Airbnb.DATA.models;
 using Airbnb.DATA.models.Identity;
+using Airbnb.Infrastructure.CategorySeeding;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -16,6 +17,18 @@ namespace Airbnb.Infrastructure.Context
         {
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            builder.Entity<PropertyCategory>().HasData(PropertyCategorySeeder.GetSeedData());
         }
+        public DbSet<Availability> availabilities { get; set; }
+        public DbSet<Booking> bookings { get; set; }
+        public DbSet<Availability> availability { get; set; }
+        public DbSet<Property> properties { get; set; }
+        public DbSet<PropertyCategory> propertyCategories { get; set; }
+        public DbSet<PropertyImage> propertyImages { get; set; }
+        public DbSet<Review> reviews { get; set; }
+        public DbSet<User> users { get; set; }
+
+
+
     }
 }

@@ -25,7 +25,7 @@ namespace MyEductaionManagementSystem.Controllers
         {
             var authResult = await _auhService.GetTokenAsync(LoginRequest.email, LoginRequest.password);
             return authResult.Match(
-                Ok,
+               res => Ok(res),
                 error => Problem(statusCode: error.StatusCode,
                 title: error.Code, detail: error.Description)
             );
@@ -65,7 +65,7 @@ namespace MyEductaionManagementSystem.Controllers
             );
         }
 
-        [HttpGet("confirm-email")]
+        [HttpGet("confirmation-email")]
         public async Task<IActionResult> ConfirmEmailAsync([FromQuery] ConfirmEmailRequest request)
         {
             var result = await _auhService.ConfirmEmailAsync(request);

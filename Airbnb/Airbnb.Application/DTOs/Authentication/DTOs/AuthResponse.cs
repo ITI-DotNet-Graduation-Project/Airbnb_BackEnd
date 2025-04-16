@@ -8,5 +8,6 @@ public record AuthResponse
     string Taken,
     int ExpiresIn,
     string RefreshToken,
-    DateTime RefreshTokenExpiration
+    DateTime RefreshTokenExpiration,
+    string Role
 );

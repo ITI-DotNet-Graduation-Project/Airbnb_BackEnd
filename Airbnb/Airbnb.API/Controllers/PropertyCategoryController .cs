@@ -1,5 +1,4 @@
-﻿using Airbnb.Application.DTOs;
-using Airbnb.Application.DTOs.PropertyCategory;
+﻿using Airbnb.Application.DTOs.PropertyCategory;
 using Airbnb.Application.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +15,7 @@ namespace Airbnb.API.Controllers
             _service = service;
         }
 
-        [HttpGet]
+        [HttpGet("getallCategories")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _service.GetAllAsync();
