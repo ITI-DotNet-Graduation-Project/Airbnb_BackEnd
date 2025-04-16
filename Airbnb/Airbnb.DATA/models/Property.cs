@@ -9,10 +9,21 @@
         public decimal Distance { get; set; }
         public string Description { get; set; }
         public int Maxgeusts { get; set; }
-        public virtual ICollection<PropertyImage> propertyImages { get; set; }
+
+        public int Bedrooms { get; set; }
+        public int Bathrooms { get; set; }
+
+
+        public string Amenities { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
+        public virtual ICollection<PropertyImage> PropertyImages { get; set; }
         public virtual ICollection<Review> Reviews { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
         public virtual ICollection<Availability> Availabilities { get; set; }
+
         public int UserId { get; set; }
         public virtual User User { get; set; }
         public int CategoryId { get; set; }

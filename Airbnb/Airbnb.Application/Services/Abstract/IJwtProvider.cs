@@ -4,7 +4,7 @@ namespace Airbnb.Application.Services.Abstract
 {
     public interface IJwtProvider
     {
-        JwtResult GenerateTaken(User user, IEnumerable<string> roles);
+        public JwtResult GenerateToken(User user, IEnumerable<string> roles);
 
         string? ValidateTaken(string taken);
     }

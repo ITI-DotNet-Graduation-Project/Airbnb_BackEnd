@@ -1,53 +1,34 @@
-﻿using Airbnb.Application.DTOs;
-using Airbnb.Application.DTOs.PropertyImage;
-using Airbnb.Application.Services.Abstract;
-using Airbnb.DATA.models;
-using Airbnb.Infrastructure.Abstract;
+﻿using Airbnb.Application.Services.Abstract;
+using Airbnb.Infrastructure.Context;
+using Airbnb.Infrastructure.Repos.Abstract;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 
 namespace Airbnb.Application.Services.Implementation
 {
     public class PropertyImageService : IPropertyImageService
     {
-        private readonly IGenericRepo<PropertyImage> _repo;
+        private readonly IPropertyImageRepo _repo;
         private readonly IMapper _mapper;
+        private readonly ILogger<PropertyImageService> _logger;
+        private readonly AppDbContext _context;
 
-        public PropertyImageService(IGenericRepo<PropertyImage> repo, IMapper mapper)
+        public PropertyImageService(AppDbContext context, IPropertyImageRepo repo, IMapper mapper, ILogger<PropertyImageService> logger)
         {
             _repo = repo;
             _mapper = mapper;
+            _logger = logger;
+            _context = context;
+        }
+        public async Task<bool> DeleteImage(int propertyId, int imageId, string userId)
+        {
+            var res = await _repo.DeleteImageAsync(propertyId, imageId, userId);
+            if (res) return true;
+            return false;
         }
 
-        public async Task<IEnumerable<PropertyImageDTO>> GetAllAsync()
-        {
-            var images = _repo.GetTableNoTracking();
-            return _mapper.Map<IEnumerable<PropertyImageDTO>>(images);
-        }
 
-        public async Task<PropertyImageDTO> GetByIdAsync(int id)
-        {
-            var image = await _repo.GetByIdAsync(id);
-            return _mapper.Map<PropertyImageDTO>(image);
-        }
 
-        public async Task<PropertyImageDTO> CreateAsync(CreatePropertyImageDTO dto)
-        {
-            var entity = _mapper.Map<PropertyImage>(dto);
-            var created = await _repo.AddAsync(entity);
-            return _mapper.Map<PropertyImageDTO>(created);
-        }
-
-        public async Task UpdateAsync(UpdatePropertyImageDTO dto)
-        {
-            var entity = _mapper.Map<PropertyImage>(dto);
-            await _repo.UpdateAsync(entity);
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            var entity = await _repo.GetByIdAsync(id);
-            await _repo.DeleteAsync(entity);
-        }
     }
 }
 

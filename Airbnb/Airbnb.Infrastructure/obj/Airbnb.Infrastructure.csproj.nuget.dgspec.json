@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj": {}
+    "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj": {
+    "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj",
+        "projectUniqueName": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj",
         "projectName": "Airbnb.DATA",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\obj\\",
+        "projectPath": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj",
+        "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
+        "outputPath": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +39,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -79,25 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj": {
+    "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj",
         "projectName": "Airbnb.Infrastructure",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\obj\\",
+        "projectPath": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
+        "outputPath": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,14 +97,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj": {
-                "projectPath": "C:\\Users\\DELL\\source\\repos\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj"
+              "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj": {
+                "projectPath": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\Airbnb.DATA.csproj"
               }
             }
           }
@@ -125,9 +118,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -136,6 +128,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -158,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -81,7 +81,7 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Booking");
+                    b.ToTable("bookings");
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.Identity.Role", b =>
@@ -122,8 +122,21 @@ namespace Airbnb.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Amenities")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Bathrooms")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Bedrooms")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -146,6 +159,9 @@ namespace Airbnb.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -155,7 +171,7 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Property");
+                    b.ToTable("properties");
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.PropertyCategory", b =>
@@ -176,7 +192,381 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PropertyCategory");
+                    b.ToTable("propertyCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Rooms",
+                            Name = "fas fa-bed"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "National parks",
+                            Name = "fas fa-tree"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Icons",
+                            Name = "fas fa-icons"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Amazing pools",
+                            Name = "fas fa-person-swimming"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Beach",
+                            Name = "fas fa-umbrella-beach"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Countryside",
+                            Name = "fas fa-tractor"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Lake",
+                            Name = "fas fa-water"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Amazing views",
+                            Name = "fas fa-mountain-sun"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Lakefront",
+                            Name = "fas fa-water"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Campers",
+                            Name = "fas fa-caravan"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Island",
+                            Name = "fas fa-umbrella-beach"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "OMG!",
+                            Name = "fas fa-star"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Description = "Design",
+                            Name = "fas fa-pencil-ruler"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "Arctic",
+                            Name = "fas fa-snowflake"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Tiny homes",
+                            Name = "fas fa-home"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Description = "Trending",
+                            Name = "fas fa-fire"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Description = "Surfing",
+                            Name = "fas fa-water"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Description = "Caves",
+                            Name = "fas fa-mountain"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Description = "Camping",
+                            Name = "fas fa-campground"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Description = "Golfing",
+                            Name = "fas fa-golf-ball-tee"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Description = "Bed & breakfasts",
+                            Name = "fas fa-mug-hot"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Description = "Desert",
+                            Name = "fas fa-sun"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Description = "Tropical",
+                            Name = "fas fa-sun"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Description = "New",
+                            Name = "fas fa-star-of-life"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Description = "Chef's kitchens",
+                            Name = "fas fa-utensils"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Description = "Mansions",
+                            Name = "fas fa-building-columns"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Description = "Top cities",
+                            Name = "fas fa-city"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Description = "Cabins",
+                            Name = "fas fa-house-chimney"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Description = "Earth homes",
+                            Name = "fas fa-leaf"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Description = "Farms",
+                            Name = "fas fa-seedling"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Description = "A-frames",
+                            Name = "fas fa-house"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Description = "Luxe",
+                            Name = "fas fa-gem"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Description = "Vineyards",
+                            Name = "fas fa-wine-bottle"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Description = "Historical homes",
+                            Name = "fas fa-landmark"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Description = "Castles",
+                            Name = "fas fa-chess-rook"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Description = "Skiing",
+                            Name = "fas fa-person-skiing"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Description = "Hanoks",
+                            Name = "fas fa-house-flag"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Description = "Top of the world",
+                            Name = "fas fa-globe"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Description = "Cycladic homes",
+                            Name = "fas fa-church"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Description = "Beachfront",
+                            Name = "fas fa-umbrella-beach"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Description = "Shepherd's huts",
+                            Name = "fas fa-house"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Description = "Windmills",
+                            Name = "fas fa-fan"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Description = "Ryokans",
+                            Name = "fas fa-house-circle-check"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Description = "Boats",
+                            Name = "fas fa-ship"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Description = "Minshukus",
+                            Name = "fas fa-house-user"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Description = "Play",
+                            Name = "fas fa-gamepad"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Description = "Casas particulares",
+                            Name = "fas fa-house-circle-exclamation"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Description = "Treehouses",
+                            Name = "fas fa-tree"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Description = "Domes",
+                            Name = "fas fa-circle"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Description = "Yurts",
+                            Name = "fas fa-circle-notch"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Description = "Barns",
+                            Name = "fas fa-warehouse"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Description = "Towers",
+                            Name = "fas fa-tower-observation"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Description = "Adapted",
+                            Name = "fas fa-wheelchair"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Description = "Ski-in/out",
+                            Name = "fas fa-snowboarding"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Description = "Off-the-grid",
+                            Name = "fas fa-solar-panel"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Description = "Houseboats",
+                            Name = "fas fa-sailboat"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Description = "Containers",
+                            Name = "fas fa-box"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Description = "Creative spaces",
+                            Name = "fas fa-lightbulb"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Description = "Grand pianos",
+                            Name = "fas fa-music"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Description = "Riads",
+                            Name = "fas fa-mosque"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Description = "Dammusi",
+                            Name = "fas fa-house-lock"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Description = "Trulli",
+                            Name = "fas fa-house-circle-check"
+                        });
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.PropertyImage", b =>
@@ -198,7 +588,7 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("PropertyImage");
+                    b.ToTable("propertyImages");
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.Review", b =>
@@ -237,7 +627,7 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Review");
+                    b.ToTable("reviews");
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.User", b =>
@@ -474,7 +864,7 @@ namespace Airbnb.Infrastructure.Migrations
             modelBuilder.Entity("Airbnb.DATA.models.PropertyImage", b =>
                 {
                     b.HasOne("Airbnb.DATA.models.Property", "Property")
-                        .WithMany("propertyImages")
+                        .WithMany("PropertyImages")
                         .HasForeignKey("PropertyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -609,9 +999,9 @@ namespace Airbnb.Infrastructure.Migrations
 
                     b.Navigation("Bookings");
 
-                    b.Navigation("Reviews");
+                    b.Navigation("PropertyImages");
 
-                    b.Navigation("propertyImages");
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("Airbnb.DATA.models.User", b =>

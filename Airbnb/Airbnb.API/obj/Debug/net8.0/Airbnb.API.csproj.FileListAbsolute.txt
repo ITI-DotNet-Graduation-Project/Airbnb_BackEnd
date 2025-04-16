@@ -442,3 +442,7 @@ C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.API\obj\Debug\net8.0\Air
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.API\obj\Debug\net8.0\Airbnb.API.genruntimeconfig.cache
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.API\obj\Debug\net8.0\ref\Airbnb.API.dll
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.API\bin\Debug\net8.0\AutoMapper.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.API\bin\Debug\net8.0\AutoMapper.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.API\bin\Debug\net8.0\Airbnb.API.staticwebassets.runtime.json
+D:\Airbnb_BackEnd\Airbnb\Airbnb.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Debug.dll

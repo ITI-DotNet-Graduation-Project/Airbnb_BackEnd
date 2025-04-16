@@ -1,11 +1,16 @@
 
 using Airbnb.Application;
+using Airbnb.Application.Map;
 using Airbnb.Application.Services.Abstract;
 using Airbnb.Application.Services.Implementation;
 using Airbnb.Application.Settings;
 using Airbnb.DATA.models;
 using Airbnb.DATA.models.Identity;
+using Airbnb.Infrastructure.Abstract;
 using Airbnb.Infrastructure.Context;
+using Airbnb.Infrastructure.Repos;
+using Airbnb.Infrastructure.Repos.Abstract;
+using Airbnb.Infrastructure.Repos.Implementation;
 using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -15,9 +20,6 @@ using Microsoft.IdentityModel.Tokens;
 using School.Application.SeedRoles;
 using System.Text;
 using System.Threading.RateLimiting;
-using Airbnb.Application.Map;
-using Airbnb.Infrastructure.Abstract;
-using Airbnb.Infrastructure.Repos;
 
 namespace Airbnb.API
 {
@@ -53,6 +55,7 @@ namespace Airbnb.API
             var settings = builder.Configuration.GetSection(nameof(JwtSetting)).Get<JwtSetting>();
 
 
+
             builder.Services.AddAuthentication(option =>
             {
                 option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -64,15 +67,45 @@ namespace Airbnb.API
                 o.SaveToken = true;
                 o.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(settings!.Key)),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(settings.Key)),
+                    ValidateIssuer = true,
                     ValidIssuer = settings.Issuer,
+                    ValidateAudience = true,
                     ValidAudience = settings.Audience,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero,
+                    NameClaimType = "sub",
+                    RoleClaimType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+                };
+                o.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = context =>
+                    {
+                        if (!string.IsNullOrEmpty(context.Token))
+                        {
+
+                            var cleanToken = new string(context.Token
+                                .Where(c => !char.IsWhiteSpace(c) && !char.IsControl(c))
+                                .ToArray());
+
+                            Console.WriteLine($"Original token: '{context.Token}'");
+                            Console.WriteLine($"Cleaned token: '{cleanToken}'");
+                            Console.WriteLine($"Original length: {context.Token.Length}");
+                            Console.WriteLine($"Cleaned length: {cleanToken.Length}");
+
+                            context.Token = cleanToken;
+                        }
+                        return Task.CompletedTask;
+                    },
+                    OnAuthenticationFailed = context =>
+                    {
+                        Console.WriteLine($"Auth failed: {context.Exception}");
+                        return Task.CompletedTask;
+                    }
                 };
             });
+            builder.Services.AddAuthorization();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {
@@ -107,20 +140,32 @@ namespace Airbnb.API
             builder.Services.AddScoped<IPropertyService, PropertyService>();
             builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>)); // This fixes the error
             builder.Services.AddScoped<IPropertyService, PropertyService>();
+            builder.Services.AddScoped<IPropertyRepo, PropertyRepo>();
+            builder.Services.AddScoped<IPropertyImageRepo, PropertyImageRepo>();
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
             builder.Services.AddScoped<IPropertyImageService, PropertyImageService>();
             builder.Services.AddScoped<IPropertyCategoryService, PropertyCategoryService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             builder.Services.AddScoped<IReviewService, ReviewService>();
 
             builder.Services.AddScoped<IBookingService, BookingService>();
 
             // if using AutoMapper
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
 
 
 
-            builder.Services.AddCors();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -129,7 +174,7 @@ namespace Airbnb.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             using (var scope = app.Services.CreateScope())
             {
@@ -138,6 +183,34 @@ namespace Airbnb.API
                 await DefaultRoles.SeedRolesAsync(roleManager);
                 await DefaultUser.SeedAdminUserAsync(userManager);
             }
+            app.UseCors("AllowAll");
+            // Add this middleware right after app.UseRouting()
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Headers.TryGetValue("Authorization", out var authHeader))
+                {
+                    var rawHeader = authHeader.ToString();
+                    Console.WriteLine($"Raw Authorization Header: '{rawHeader}'");
+                    Console.WriteLine($"Header Length: {rawHeader.Length}");
+
+
+                    var headerBytes = Encoding.UTF8.GetBytes(rawHeader);
+                    Console.WriteLine($"Hex: {BitConverter.ToString(headerBytes)}");
+
+
+                    var spaceCount = rawHeader.Count(c => c == ' ');
+                    Console.WriteLine($"Space characters in header: {spaceCount}");
+                }
+                await next();
+            });
+            app.UseRouting();
+            app.Use(async (context, next) =>
+            {
+                Console.WriteLine($"Request path: {context.Request.Path}");
+                Console.WriteLine($"Auth header exists: {context.Request.Headers.ContainsKey("Authorization")}");
+                await next();
+            });
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

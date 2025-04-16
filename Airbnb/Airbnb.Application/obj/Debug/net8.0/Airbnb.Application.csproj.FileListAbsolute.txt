@@ -32,3 +32,5 @@ C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\ne
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.Application\obj\Debug\net8.0\ref\Airbnb.Application.dll
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.Infrastructure.dll
 C:\Users\DELL\Source\Repos\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.Infrastructure.pdb
+D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.Infrastructure.dll
+D:\Airbnb_BackEnd\Airbnb\Airbnb.Application\bin\Debug\net8.0\Airbnb.Infrastructure.pdb

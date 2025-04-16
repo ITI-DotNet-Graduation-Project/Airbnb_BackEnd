@@ -1,17 +1,10 @@
-﻿using Airbnb.Application.DTOs.Property;
-using Airbnb.Application.DTOs.PropertyImage;
+﻿using Airbnb.Application.DTOs.Booking;
+using Airbnb.Application.DTOs.Property;
 using Airbnb.Application.DTOs.PropertyCategory;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using AutoMapper;
-using Airbnb.DATA.models;
+using Airbnb.Application.DTOs.PropertyImage;
 using Airbnb.Application.DTOs.Review;
-using Airbnb.Application.DTOs.Booking;
+using Airbnb.DATA.models;
+using AutoMapper;
 
 namespace Airbnb.Application.Map
 {
@@ -20,6 +13,7 @@ namespace Airbnb.Application.Map
         public MappingProfile()
         {
             CreateMap<Property, PropertyDTO>().ReverseMap();
+            CreateMap<PropertyImageDto, PropertyImage>().ReverseMap();
             CreateMap<CreatePropertyDTO, Property>();
             CreateMap<UpdatePropertyImageDTO, Property>();
 

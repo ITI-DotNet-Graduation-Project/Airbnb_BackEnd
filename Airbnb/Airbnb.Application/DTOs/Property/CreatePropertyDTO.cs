@@ -1,20 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Airbnb.Application.DTOs.Property
 {
     public class CreatePropertyDTO
     {
+        [Required]
         public string Title { get; set; }
-        public string Location { get; set; }
-        public decimal Price { get; set; }
-        public decimal Distance { get; set; }
+
+        [Required]
         public string Description { get; set; }
-        public int MaxGuests { get; set; }
-        public int UserId { get; set; }
-        public int CategoryId { get; set; }
+
+        [Required]
+        public string Location { get; set; }
+
+        [Required]
+        [Range(1, double.MaxValue)]
+        public decimal Price { get; set; }
+
+        [Required]
+        [Range(1, int.MaxValue)]
+        public int Bedrooms { get; set; }
+
+        [Required]
+        [Range(1, int.MaxValue)]
+        public int Bathrooms { get; set; }
+
+        [Required]
+        public string PropertyType { get; set; }
+        public string UserId { get; set; }
+        public List<string> Amenities { get; set; } = new List<string>();
+        public List<IFormFile> Images { get; set; } = new List<IFormFile>();
     }
 }
