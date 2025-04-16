@@ -1,169 +1,225 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Airbnb_BackEnd\\Airbnb\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|d:\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.data\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|solutionrelative:airbnb.data\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|d:\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\propertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\propertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|d:\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\abstract\\ipropertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\abstract\\ipropertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|d:\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\abstract\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\abstract\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\payment\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\payment\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|d:\\airbnb_backend\\airbnb\\airbnb.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|solutionrelative:airbnb.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertyimageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertyimageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ipropertyimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ipropertyimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\map\\mappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\map\\mappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertyimage\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertyimage\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertyimage\\createpropertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertyimage\\createpropertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\updatepropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\updatepropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\propertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\propertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\createpropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\createpropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\updatepropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\updatepropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertyimagecontroller cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertyimagecontroller cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\booking\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\booking\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertycategorycontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertycategorycontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\map\\mappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\map\\mappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|d:\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\abstract\\ipropertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\abstract\\ipropertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\payment\\createpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\payment\\createpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\abstract\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\abstract\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\repos\\implementation\\propertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\repos\\implementation\\propertyimagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|solutionrelative:airbnb.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertyimageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertyimageservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\implementation\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\implementation\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ipropertyimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ipropertyimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertyimage\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertyimage\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertyimage\\createpropertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertyimage\\createpropertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\updatepropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\updatepropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\propertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\propertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\propertycategory\\createpropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\propertycategory\\createpropertycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\updatepropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\updatepropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertyimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\propertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\propertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\property\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\property\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertyimagecontroller cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertyimagecontroller cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\propertycategorycontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\propertycategorycontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B0BF04-059C-44C7-AF14-423B099F10E7}|Airbnb.API\\Airbnb.API.csproj|solutionrelative:airbnb.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\services\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\services\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\airbnb.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\airbnb.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\airbnb.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|d:\\airbnb_backend\\airbnb\\airbnb.data\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.data\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|solutionrelative:airbnb.data\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|d:\\airbnb_backend\\airbnb\\airbnb.infrastructure\\inframodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.infrastructure\\inframodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1904342-89A5-474C-A96B-3D7CC417E8CF}|Airbnb.Infrastructure\\Airbnb.Infrastructure.csproj|solutionrelative:airbnb.infrastructure\\inframodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|d:\\airbnb_backend\\airbnb\\airbnb.data\\models\\propertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.data\\models\\propertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A8F4DA4-231C-41D2-91FA-30732788324C}|Airbnb.DATA\\Airbnb.DATA.csproj|solutionrelative:airbnb.data\\models\\propertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|d:\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\review\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|c:\\users\\dell\\documents\\github\\airbnb_backend\\airbnb\\airbnb.application\\dtos\\review\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F89FABB-D6D9-4BC1-BF4C-E5D8FAD1420C}|Airbnb.Application\\Airbnb.Application.csproj|solutionrelative:airbnb.application\\dtos\\review\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -174,332 +230,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\BookingService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\BookingService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\BookingService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\BookingService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:40:27.665Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\UserService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\UserService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\UserService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\UserService.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:13:21.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\User.cs",
-              "RelativeDocumentMoniker": "Airbnb.DATA\\models\\User.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\User.cs",
-              "RelativeToolTip": "Airbnb.DATA\\models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:16:27.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPropertyRepo.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
-              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
-              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:31:43.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPropertyImageRepo.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
-              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
-              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:56:58.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PropertyRepo.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
-              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
-              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:50:42.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PropertyImageRepo.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
-              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
-              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:57:12.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\AuthService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\AuthService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\AuthService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\AuthService.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAA4wJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:40:08.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PropertyCategoryService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:39:29.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PropertyService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAgwIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T13:46:20.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IPropertyService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:29:55.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:39:17.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MappingProfile .cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Map\\MappingProfile .cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Map\\MappingProfile .cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Map\\MappingProfile .cs",
-              "RelativeToolTip": "Airbnb.Application\\Map\\MappingProfile .cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:39:11.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PropertyImageService .cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:55:30.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PropertyImageDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:59.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreatePropertyImageDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:57.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPropertyImageService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:55:00.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UpdatePropertyCategoryDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:54.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PropertyCategoryDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:53.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UserDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\User\\UserDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UserDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\User\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:13:05.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UpdateProfileDto.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:13:18.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CreatePropertyCategoryDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:51.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PropertyResponse.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:30.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PropertyImageDto.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:28.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreatePropertyDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:38:19.865Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -519,180 +258,657 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PropertyImageController cs.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyImageController cs.cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyImageController cs.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyImageController cs.cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyImageController cs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T20:12:52.204Z",
+              "WhenOpened": "2025-04-16T15:06:55.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\ReviewController.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\ReviewController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PropertyCategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyCategoryService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T20:33:40.046Z",
+              "WhenOpened": "2025-04-16T01:39:29.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UpdatePropertyDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwCkAAABFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PaymentService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PaymentService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T21:06:13.895Z",
+              "WhenOpened": "2025-04-16T15:01:16.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PropertyController.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyController.cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyController.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyController.cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyController.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAUwDEAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:30:10.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwB8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:20:40.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "PropertyDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
-              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAmwBkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:27:46.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PropertyCategoryController .cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyCategoryController .cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyCategoryController .cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyCategoryController .cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyCategoryController .cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:37:15.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Program.cs",
               "RelativeDocumentMoniker": "Airbnb.API\\Program.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Program.cs",
               "RelativeToolTip": "Airbnb.API\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwE0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T20:00:08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 3,
+              "Title": "PaymentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Payment\\PaymentDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Payment\\PaymentDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Payment\\PaymentDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Payment\\PaymentDTO.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:29:33.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPaymentService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IPaymentService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:35:36.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Payment.cs",
+              "RelativeDocumentMoniker": "Airbnb.DATA\\models\\Payment.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Payment.cs",
+              "RelativeToolTip": "Airbnb.DATA\\models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:18:47.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IBookingService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IBookingService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IBookingService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:15:28.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Booking\\BookingDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Booking\\BookingDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Booking\\BookingDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Booking\\BookingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:15:14.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "BookingController.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\BookingController.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\BookingController.cs",
               "RelativeToolTip": "Airbnb.API\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T01:37:12.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Airbnb.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "20250416151216_AddPaymentsTable.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Migrations\\20250416151216_AddPaymentsTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:37:06.13Z",
+              "WhenOpened": "2025-04-16T15:12:16.185Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250416150823_AddPaymentsTable.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Migrations\\20250416150823_AddPaymentsTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:08:23.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:39:17.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MappingProfile .cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Map\\MappingProfile .cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Map\\MappingProfile .cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Map\\MappingProfile .cs",
+              "RelativeToolTip": "Airbnb.Application\\Map\\MappingProfile .cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:39:11.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreatePaymentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Payment\\CreatePaymentDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Payment\\CreatePaymentDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Payment\\CreatePaymentDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Payment\\CreatePaymentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:39:09.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PaymentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PaymentRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\PaymentRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PaymentRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\PaymentRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:33:14.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GenericRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\GenericRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\GenericRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\GenericRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\GenericRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:34:19.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:19:34.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPropertyImageRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyImageRepo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvwQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:56:58.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Airbnb.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\appsettings.json",
+              "RelativeToolTip": "Airbnb.API\\appsettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-16T14:17:15.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\UserService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\UserService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\UserService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\UserService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:13:21.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\User.cs",
+              "RelativeDocumentMoniker": "Airbnb.DATA\\models\\User.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\User.cs",
+              "RelativeToolTip": "Airbnb.DATA\\models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:16:27.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPropertyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Abstract\\IPropertyRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:31:43.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\BookingService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\BookingService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\BookingService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\BookingService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:40:27.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PropertyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyRepo.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:50:42.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PropertyImageRepo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
+              "RelativeDocumentMoniker": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
+              "RelativeToolTip": "Airbnb.Infrastructure\\Repos\\Implementation\\PropertyImageRepo.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:57:12.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\AuthService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\AuthService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\AuthService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\AuthService.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAA4wJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:40:08.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PropertyService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyService.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAgwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:46:20.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IPropertyService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IPropertyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:29:55.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PropertyImageService .cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Implementation\\PropertyImageService .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:55:30.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PropertyImageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyImage\\PropertyImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:59.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreatePropertyImageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyImage\\CreatePropertyImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:57.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IPropertyImageService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IPropertyImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:55:00.194Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IUserService.cs",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IUserService.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IUserService.cs",
-              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAaAAAAAAAAAA==",
+              "Title": "UpdatePropertyCategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\UpdatePropertyCategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:12:19.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:38:54.332Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "Airbnb.Application",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Airbnb.Application.csproj",
-              "RelativeDocumentMoniker": "Airbnb.Application\\Airbnb.Application.csproj",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Airbnb.Application.csproj",
-              "RelativeToolTip": "Airbnb.Application\\Airbnb.Application.csproj",
+              "Title": "PropertyCategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\PropertyCategoryDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-15T23:16:18.027Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:53.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\User\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UserDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\User\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:13:05.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UpdateProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\User\\UpdateProfileDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:13:18.143Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "Property.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Property.cs",
-              "RelativeDocumentMoniker": "Airbnb.DATA\\models\\Property.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Property.cs",
-              "RelativeToolTip": "Airbnb.DATA\\models\\Property.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA6wBMAAAAoAAAAAAAAAA==",
+              "Title": "CreatePropertyCategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\PropertyCategory\\CreatePropertyCategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:27:54.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:38:51.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PropertyResponse.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:30.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PropertyImageDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:28.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CreatePropertyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\CreatePropertyDTO.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:38:19.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PropertyImageController cs.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyImageController cs.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyImageController cs.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyImageController cs.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyImageController cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T20:12:52.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T20:33:40.046Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
+              "Title": "UpdatePropertyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\UpdatePropertyDTO.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwCkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T21:06:13.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyController.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAUwDEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:30:10.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:20:40.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PropertyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
+              "RelativeToolTip": "Airbnb.Application\\DTOs\\Property\\PropertyDTO.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwBkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T18:27:46.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PropertyCategoryController .cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyCategoryController .cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\PropertyCategoryController .cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\PropertyCategoryController .cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\PropertyCategoryController .cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:37:15.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Airbnb.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Airbnb.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:37:06.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IUserService.cs",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Services\\Abstract\\IUserService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Services\\Abstract\\IUserService.cs",
+              "RelativeToolTip": "Airbnb.Application\\Services\\Abstract\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T00:12:19.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Airbnb.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Airbnb.Application.csproj",
+              "RelativeDocumentMoniker": "Airbnb.Application\\Airbnb.Application.csproj",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\Airbnb.Application.csproj",
+              "RelativeToolTip": "Airbnb.Application\\Airbnb.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-15T23:16:18.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Property.cs",
+              "RelativeDocumentMoniker": "Airbnb.DATA\\models\\Property.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\Property.cs",
+              "RelativeToolTip": "Airbnb.DATA\\models\\Property.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA6wBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T18:27:54.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "InfraModule.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\InfraModule.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\InfraModule.cs",
               "RelativeDocumentMoniker": "Airbnb.Infrastructure\\InfraModule.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\InfraModule.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Infrastructure\\InfraModule.cs",
               "RelativeToolTip": "Airbnb.Infrastructure\\InfraModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -700,11 +916,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 53,
               "Title": "PropertyCategory.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\PropertyCategory.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\PropertyCategory.cs",
               "RelativeDocumentMoniker": "Airbnb.DATA\\models\\PropertyCategory.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\PropertyCategory.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.DATA\\models\\PropertyCategory.cs",
               "RelativeToolTip": "Airbnb.DATA\\models\\PropertyCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -712,15 +928,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 54,
               "Title": "ReviewDTO.cs",
-              "DocumentMoniker": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
               "RelativeDocumentMoniker": "Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
-              "ToolTip": "D:\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\GitHub\\Airbnb_BackEnd\\Airbnb\\Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
               "RelativeToolTip": "Airbnb.Application\\DTOs\\Review\\ReviewDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T18:33:01.58Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

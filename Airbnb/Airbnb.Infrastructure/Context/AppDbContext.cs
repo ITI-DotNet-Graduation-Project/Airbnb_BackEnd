@@ -28,6 +28,7 @@ namespace Airbnb.Infrastructure.Context
         public DbSet<Review> reviews { get; set; }
         public DbSet<User> users { get; set; }
 
+        public DbSet<Payment> Payments { get; set; }/////////////////
 
 
     }
