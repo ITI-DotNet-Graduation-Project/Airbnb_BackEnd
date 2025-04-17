@@ -18,6 +18,11 @@ namespace Airbnb.Infrastructure.Context
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             builder.Entity<PropertyCategory>().HasData(PropertyCategorySeeder.GetSeedData());
+            builder.Entity<Property>()
+            .HasMany(p => p.Availabilities)
+            .WithOne(a => a.Property)
+            .HasForeignKey(a => a.PropertyId)
+            .OnDelete(DeleteBehavior.Cascade);
         }
         public DbSet<Availability> availabilities { get; set; }
         public DbSet<Booking> bookings { get; set; }

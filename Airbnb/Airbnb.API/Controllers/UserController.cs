@@ -1,4 +1,5 @@
-﻿using Airbnb.Application.DTOs.User;
+﻿using Airbnb.Application.DTOs.Booking;
+using Airbnb.Application.DTOs.User;
 using Airbnb.Application.Services.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,12 +13,27 @@ namespace Airbnb.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IBookingService _bookingService;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, IBookingService bookingService)
         {
             _userService = userService;
+            _bookingService = bookingService;
         }
+        [HttpGet("user/{userId}")]
+        [Authorize]
+        public async Task<ActionResult<IEnumerable<BookingDTO>>> GetUserBookings(int userId)
+        {
 
+            var currentUserId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            if (userId != currentUserId)
+            {
+                return Forbid();
+            }
+
+            var bookings = await _bookingService.GetUserBookings(userId);
+            return Ok(bookings);
+        }
 
 
         [HttpPut("profile")]

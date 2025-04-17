@@ -133,35 +133,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.BookingController",
-    "Method": "GetAll",
-    "RelativePath": "api/Booking",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Airbnb.API.Controllers.BookingController",
-    "Method": "Create",
-    "RelativePath": "api/Booking",
+    "ContainingType": "Airbnb.API.Controllers.BookingsController",
+    "Method": "CreateBooking",
+    "RelativePath": "api/Bookings",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Airbnb.Application.DTOs.Booking.CreateBookingDTO",
+        "Name": "bookingDto",
+        "Type": "Airbnb.Application.DTOs.Booking.BookingDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.BookingController",
-    "Method": "GetById",
-    "RelativePath": "api/Booking/{id}",
+    "ContainingType": "Airbnb.API.Controllers.BookingsController",
+    "Method": "GetBookingById",
+    "RelativePath": "api/Bookings/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -175,30 +165,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.BookingController",
-    "Method": "Update",
-    "RelativePath": "api/Booking/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Airbnb.Application.DTOs.Booking.UpdateBookingDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Airbnb.API.Controllers.BookingController",
-    "Method": "Delete",
-    "RelativePath": "api/Booking/{id}",
+    "ContainingType": "Airbnb.API.Controllers.BookingsController",
+    "Method": "CancelBooking",
+    "RelativePath": "api/Bookings/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -209,6 +178,42 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Airbnb.API.Controllers.BookingsController",
+    "Method": "GetBookedDates",
+    "RelativePath": "api/Bookings/{propertyId}/booked-dates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Airbnb.API.Controllers.BookingsController",
+    "Method": "GetUserBookings",
+    "RelativePath": "api/Bookings/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -275,13 +280,8 @@
         "IsRequired": false
       },
       {
-        "Name": "Amenities",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "AmenitiesList",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Name": "MaxGuest",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -297,6 +297,16 @@
       {
         "Name": "NewImages",
         "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AvailabilitiesJson",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Availabilities",
+        "Type": "System.Collections.Generic.List\u00601[[Airbnb.Application.DTOs.Property.AvailabilityDto, Airbnb.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       }
     ],
@@ -351,13 +361,23 @@
         "IsRequired": false
       },
       {
-        "Name": "Amenities",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Name": "MaxGuest",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
         "Name": "Images",
         "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AvailabilitiesJson",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Availabilities",
+        "Type": "System.Collections.Generic.List\u00601[[Airbnb.Application.DTOs.Property.AvailabilityDto, Airbnb.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       }
     ],
@@ -403,82 +423,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Airbnb.API.Controllers.PropertyController",
-    "Method": "UpdateProperty",
-    "RelativePath": "api/Property/update-property/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Location",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Price",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "Bedrooms",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Bathrooms",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PropertyType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Amenities",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "AmenitiesList",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DeletedImageIds",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "NewImages",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-        "IsRequired": false
-      }
-    ],
     "ReturnTypes": []
   },
   {
@@ -582,83 +526,82 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.ReviewController",
-    "Method": "GetAll",
-    "RelativePath": "api/Review",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Airbnb.API.Controllers.ReviewController",
-    "Method": "Create",
-    "RelativePath": "api/Review",
+    "ContainingType": "Airbnb.API.Controllers.ReviewsController",
+    "Method": "AddReview",
+    "RelativePath": "api/Reviews",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
+        "Name": "reviewDto",
         "Type": "Airbnb.Application.DTOs.Review.CreateReviewDTO",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Airbnb.Application.DTOs.Review.ReviewDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.ReviewController",
-    "Method": "GetById",
-    "RelativePath": "api/Review/{id}",
+    "ContainingType": "Airbnb.API.Controllers.ReviewsController",
+    "Method": "GetReviewsForProperty",
+    "RelativePath": "api/Reviews/property/{propertyId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "propertyId",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Airbnb.Application.DTOs.Review.ReviewDTO, Airbnb.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "Airbnb.API.Controllers.ReviewController",
-    "Method": "Update",
-    "RelativePath": "api/Review/{id}",
-    "HttpMethod": "PUT",
+    "ContainingType": "Airbnb.API.Controllers.ReviewsController",
+    "Method": "GetAverageRating",
+    "RelativePath": "api/Reviews/property/{propertyId}/average-rating",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Airbnb.Application.DTOs.Review.UpdateReviewDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Airbnb.API.Controllers.ReviewController",
-    "Method": "Delete",
-    "RelativePath": "api/Review/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "propertyId",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Double",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Airbnb.Controllers.UsersController",
@@ -700,5 +643,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Airbnb.Controllers.UsersController",
+    "Method": "GetUserBookings",
+    "RelativePath": "api/Users/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Airbnb.Application.DTOs.Booking.BookingDTO, Airbnb.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

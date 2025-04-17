@@ -11,6 +11,7 @@ using Airbnb.Infrastructure.Context;
 using Airbnb.Infrastructure.Repos;
 using Airbnb.Infrastructure.Repos.Abstract;
 using Airbnb.Infrastructure.Repos.Implementation;
+using Airbnb.Infrastructure.UnitOfWorks;
 using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -29,10 +30,10 @@ namespace Airbnb.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<AppDbContext>(options =>
@@ -135,6 +136,11 @@ namespace Airbnb.API
                 }
                 );
             });
+            //builder.Services.AddControllers()
+            //    .AddJsonOptions(options =>
+            //    {
+            //        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+            //    });
 
             /////
             builder.Services.AddScoped<IPropertyService, PropertyService>();
@@ -142,6 +148,10 @@ namespace Airbnb.API
             builder.Services.AddScoped<IPropertyService, PropertyService>();
             builder.Services.AddScoped<IPropertyRepo, PropertyRepo>();
             builder.Services.AddScoped<IPropertyImageRepo, PropertyImageRepo>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IReviewRepo, ReviewRepo>();
+            builder.Services.AddScoped<IUserRepo, UserRepo>();
+            builder.Services.AddScoped<IBookingRepo, BookingRepo>();
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
             builder.Services.AddScoped<IPropertyImageService, PropertyImageService>();
@@ -184,7 +194,7 @@ namespace Airbnb.API
                 await DefaultUser.SeedAdminUserAsync(userManager);
             }
             app.UseCors("AllowAll");
-            // Add this middleware right after app.UseRouting()
+
             app.Use(async (context, next) =>
             {
                 if (context.Request.Headers.TryGetValue("Authorization", out var authHeader))
