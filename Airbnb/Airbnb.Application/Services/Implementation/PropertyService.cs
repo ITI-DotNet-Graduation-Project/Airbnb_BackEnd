@@ -1,4 +1,5 @@
 ﻿using Airbnb.Application.DTOs.Property;
+using Airbnb.Application.Properties;
 using Airbnb.Application.Services.Abstract;
 using Airbnb.DATA.models;
 using Airbnb.Infrastructure.Repos.Abstract;
@@ -6,6 +7,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace Airbnb.Application.Services.Implementation
 {
@@ -23,13 +25,25 @@ namespace Airbnb.Application.Services.Implementation
             _environment = environment;
             _logger = logger;
         }
-        public async Task<IEnumerable<PropertyDTO>> GetPropertiesByHost(string hostId)
-        {
-            var p = await _propertyRepo.GetByIdWithInclude(hostId);
-            var res = _mapper.Map<IEnumerable<PropertyDTO>>(p);
-            return res;
 
+        public async Task<HostPropertiesResponse> GetPropertiesByHost(string hostId)
+        {
+            var propertiesWithStatus = await _propertyRepo.GetHostPropertiesWithStatus(hostId);
+            var bookedTodayCount = await _propertyRepo.GetTodaysBookedPropertiesCount(hostId);
+            var overallAverageRating = await _propertyRepo.GetHostAverageRating(hostId);
+
+            var propertyDtos = _mapper.Map<IEnumerable<PropertyDTO>>(propertiesWithStatus.Select(x => x.Property));
+
+            return new HostPropertiesResponse
+            {
+                Properties = propertyDtos,
+                TotalProperties = propertiesWithStatus.Count(),
+                AvailableTodayCount = propertiesWithStatus.Count(p => p.IsAvailableToday),
+                BookedTodayCount = bookedTodayCount,
+                OverallAverageRating = overallAverageRating
+            };
         }
+
         public async Task CreatePropertyAsync(CreatePropertyDTO propertyDto)
         {
             var property = new Property
@@ -68,9 +82,9 @@ namespace Airbnb.Application.Services.Implementation
             await _propertyRepo.AddAsync(property);
 
         }
+
         public async Task UpdatePropertyAsync(UpdatePropertyDTO propertyDto)
         {
-
             var property = await _propertyRepo.GetByIdWithImagesAsync(propertyDto.Id);
 
             if (property == null || property.UserId != int.Parse(propertyDto.UserId))
@@ -84,25 +98,37 @@ namespace Airbnb.Application.Services.Implementation
             property.Bedrooms = propertyDto.Bedrooms;
             property.Bathrooms = propertyDto.Bathrooms;
             property.CategoryId = int.Parse(propertyDto.PropertyType);
-            property.Maxgeusts = (propertyDto.MaxGuest);
-            //property.Availabilities = (propertyDto.Availabilities);
-            if (propertyDto.Availabilities != null && propertyDto.Availabilities.Any())
+            property.Maxgeusts = propertyDto.MaxGuest;
+
+
+            await _propertyRepo.RemoveAllAvailabilitiesAsync(property.Id);
+
+
+            if (!string.IsNullOrEmpty(propertyDto.AvailabilitiesJson))
             {
-                foreach (var availabilityDto in propertyDto.Availabilities)
+                var availabilities = JsonConvert.DeserializeObject<List<AvailabilityDto>>(propertyDto.AvailabilitiesJson);
+
+                foreach (var availabilityDto in availabilities)
                 {
+
+
+
+                    if (availabilityDto.endDate <= availabilityDto.startDate)
+                    {
+                        throw new ArgumentException("End date must be after start date");
+                    }
+
                     property.Availabilities.Add(new Availability
                     {
-                        StartDate = (availabilityDto.startDate),
-                        EndDate = (availabilityDto.endDate),
+                        StartDate = availabilityDto.startDate,
+                        EndDate = availabilityDto.endDate,
                         IsBooked = availabilityDto.isBooked,
                         PropertyId = property.Id
                     });
                 }
             }
 
-
             await ProcessImageUpdates(property, propertyDto);
-
             await _propertyRepo.UpdateAsync(property);
         }
 
@@ -166,8 +192,22 @@ namespace Airbnb.Application.Services.Implementation
 
         public async Task<PropertyDTO> GetByIdAsync(int id)
         {
+            var today = DateTime.Today;
             var property = await _propertyRepo.GetOnePropertyWithInclude(id.ToString());
-            return _mapper.Map<PropertyDTO>(property);
+
+            if (property == null)
+                return null;
+
+            var propertyDto = _mapper.Map<PropertyDTO>(property);
+
+
+            propertyDto.IsBookedToday = property.Bookings.Any(b =>
+                b.CheckInDte <= today &&
+                b.CheckOutDate >= today);
+
+
+
+            return propertyDto;
         }
 
         public async Task<PropertyDTO> CreateAsync(CreatePropertyDTO dto)

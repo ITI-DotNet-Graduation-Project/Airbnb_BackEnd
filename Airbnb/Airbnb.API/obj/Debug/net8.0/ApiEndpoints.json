@@ -54,22 +54,6 @@
   },
   {
     "ContainingType": "MyEductaionManagementSystem.Controllers.AuthController",
-    "Method": "RefreshAsync",
-    "RelativePath": "api/Auth/refresh",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Airbnb.Application.DTOs.Authentication.RefreshTakenRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyEductaionManagementSystem.Controllers.AuthController",
     "Method": "RegisterAsync",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
@@ -111,22 +95,6 @@
       {
         "Name": "request",
         "Type": "Airbnb.Application.DTOs.Authentication._ResetPasswordRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyEductaionManagementSystem.Controllers.AuthController",
-    "Method": "RevokeRefreshAsync",
-    "RelativePath": "api/Auth/revoke-refresh-token",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Airbnb.Application.DTOs.Authentication.RefreshTakenRequest",
         "IsRequired": true
       }
     ],
