@@ -16,6 +16,7 @@ namespace Airbnb.Application.DTOs.Property
         public int Bedrooms { get; set; }
         public int Bathrooms { get; set; }
 
+        public bool IsBookedToday { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

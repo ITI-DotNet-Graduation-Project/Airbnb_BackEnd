@@ -6,6 +6,12 @@ using Microsoft.Extensions.Logging;
 
 namespace Airbnb.Infrastructure.Repos.Implementation
 {
+    public class PropertyWithStatusDto
+    {
+        public Property Property { get; set; }
+        public bool IsAvailableToday { get; set; }
+        public double? AverageRating { get; set; }
+    }
     public class PropertyRepo : GenericRepo<Property>, IPropertyRepo
     {
         private readonly AppDbContext _context;
@@ -15,6 +21,44 @@ namespace Airbnb.Infrastructure.Repos.Implementation
         {
             _context = context;
             _logger = logger;
+        }
+        public async Task<IEnumerable<PropertyWithStatusDto>> GetHostPropertiesWithStatus(string hostId)
+        {
+            var today = DateTime.Today;
+
+            return await _context.properties
+                .Where(p => p.UserId == int.Parse(hostId))
+                .Include(p => p.PropertyImages)
+                .Include(p => p.Category)
+                .Include(p => p.Availabilities)
+                .Include(p => p.Bookings)
+                .Include(p => p.Reviews)
+                .Select(p => new PropertyWithStatusDto
+                {
+                    Property = p,
+                    IsAvailableToday =
+                                     !p.Bookings.Any(b => b.CheckInDte <= today && b.CheckOutDate >= today),
+                    AverageRating = p.Reviews.Any() ? p.Reviews.Average(r => r.Rating) : (double?)null
+                })
+                .ToListAsync();
+        }
+
+        public async Task<int> GetTodaysBookedPropertiesCount(string hostId)
+        {
+            var today = DateTime.Today;
+
+            return await _context.bookings
+                .CountAsync(b => b.Property.UserId == int.Parse(hostId) &&
+                               b.CheckInDte <= today &&
+                               b.CheckOutDate >= today);
+        }
+
+        public async Task<double?> GetHostAverageRating(string hostId)
+        {
+            return await _context.properties
+                .Where(p => p.UserId == int.Parse(hostId))
+                .SelectMany(p => p.Reviews)
+                .AverageAsync(r => (double?)r.Rating);
         }
         public async Task<bool> DeletePropertyOfUser(int propertyId, string userId)
         {
@@ -74,11 +118,14 @@ namespace Airbnb.Infrastructure.Repos.Implementation
 
         public async Task<Property> GetOnePropertyWithInclude(string id)
         {
+            var today = DateTime.Today;
+
             return await _context.properties
                 .Include(p => p.PropertyImages)
                 .Include(p => p.Category)
                 .Include(p => p.Availabilities)
                 .Include(p => p.Reviews)
+                .Include(p => p.Bookings)
                 .FirstOrDefaultAsync(p => p.Id == int.Parse(id));
 
         }
@@ -88,6 +135,15 @@ namespace Airbnb.Infrastructure.Repos.Implementation
               .Include(p => p.PropertyImages)
               .Include(p => p.Category)
               .Include(p => p.Availabilities).ToListAsync();
+        }
+        public async Task RemoveAllAvailabilitiesAsync(int propertyId)
+        {
+            var availabilities = await _context.availabilities
+                .Where(a => a.PropertyId == propertyId)
+                .ToListAsync();
+
+            _context.availabilities.RemoveRange(availabilities);
+            await _context.SaveChangesAsync();
         }
         public async Task<bool> IsPropertyAvailable(int propertyId, DateTime checkIn, DateTime checkOut)
         {

@@ -31,10 +31,10 @@ namespace Airbnb.API.Controllers
         [Authorize]
         public async Task<IActionResult> GetPropertyToView(int id)
         {
-            var res = await _propertyService.GetByIdAsync(id);
+            var result = await _propertyService.GetByIdAsync(id);
 
-            if (res != null)
-                return Ok(res);
+            if (result != null)
+                return Ok(result);
 
             return NotFound();
         }
@@ -52,17 +52,27 @@ namespace Airbnb.API.Controllers
             }
 
             var userId = User.FindFirstValue("sub") ??
-                 User.FindFirstValue(ClaimTypes.NameIdentifier) ??
-                 User.Identity?.Name;
+                  User.FindFirstValue(ClaimTypes.NameIdentifier) ??
+                  User.Identity?.Name;
             if (string.IsNullOrEmpty(userId))
             {
                 var claims = User.Claims.Select(c => $"{c.Type}={c.Value}").ToList();
                 Console.WriteLine($"Available claims: {string.Join(", ", claims)}");
                 return BadRequest("User ID claim (sub) not found in token");
             }
-            _logger.LogError(userId);
-            var properties = await _propertyService.GetPropertiesByHost(userId);
-            return Ok(properties);
+
+            _logger.LogInformation($"Fetching properties for host {userId}");
+
+            try
+            {
+                var result = await _propertyService.GetPropertiesByHost(userId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error fetching host properties");
+                return StatusCode(500, "An error occurred while fetching properties");
+            }
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromForm] UpdatePropertyDTO propertyDto)
