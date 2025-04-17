@@ -11,3 +11,16 @@ D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.dll
 D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\refint\Airbnb.DATA.dll
 D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.pdb
 D:\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\ref\Airbnb.DATA.dll
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.deps.json
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.dll
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\bin\Debug\net8.0\Airbnb.DATA.pdb
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.csproj.AssemblyReference.cache
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.GeneratedMSBuildEditorConfig.editorconfig
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.AssemblyInfoInputs.cache
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.AssemblyInfo.cs
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.csproj.CoreCompileInputs.cache
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.sourcelink.json
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.dll
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\refint\Airbnb.DATA.dll
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\Airbnb.DATA.pdb
+E:\Pavilion\GitHub\Airbnb_BackEnd\Airbnb\Airbnb.DATA\obj\Debug\net8.0\ref\Airbnb.DATA.dll
