@@ -29,7 +29,15 @@ namespace Airbnb.Application.DTOs.Property
         [Required]
         public string PropertyType { get; set; }
         public string UserId { get; set; }
-        public List<string> Amenities { get; set; } = new List<string>();
+        [Required]
+        public int MaxGuest { get; set; }
         public List<IFormFile> Images { get; set; } = new List<IFormFile>();
+
+        // Add this line:
+        public string AvailabilitiesJson { get; set; }
+
+        // This property is to hold the deserialized result:
+        public List<AvailabilityDto> Availabilities { get; set; } = new();
+
     }
 }

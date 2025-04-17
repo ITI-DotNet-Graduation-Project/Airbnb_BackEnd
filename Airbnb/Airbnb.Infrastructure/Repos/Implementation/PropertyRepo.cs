@@ -63,10 +63,11 @@ namespace Airbnb.Infrastructure.Repos.Implementation
         public async Task<IEnumerable<Property>> GetByIdWithInclude(string id)
         {
             return await _context.properties
-                .Where(p => p.UserId == int.Parse(id))
-                .Include(p => p.PropertyImages)
-                .Include(p => p.Category)
-                .ToListAsync();
+            .Where(p => p.UserId == int.Parse(id))
+            .Include(p => p.PropertyImages)
+            .Include(p => p.Category)
+            .Include(p => p.Availabilities)
+            .ToListAsync();
 
 
         }
@@ -74,10 +75,26 @@ namespace Airbnb.Infrastructure.Repos.Implementation
         public async Task<Property> GetOnePropertyWithInclude(string id)
         {
             return await _context.properties
-             .Include(p => p.PropertyImages)
-             .Include(p => p.Category)
-             .FirstOrDefaultAsync(p => p.Id == int.Parse(id));
+                .Include(p => p.PropertyImages)
+                .Include(p => p.Category)
+                .Include(p => p.Availabilities)
+                .Include(p => p.Reviews)
+                .FirstOrDefaultAsync(p => p.Id == int.Parse(id));
 
+        }
+        public async Task<IEnumerable<Property>> GetAllWithIncludesAsync()
+        {
+            return await _context.properties
+              .Include(p => p.PropertyImages)
+              .Include(p => p.Category)
+              .Include(p => p.Availabilities).ToListAsync();
+        }
+        public async Task<bool> IsPropertyAvailable(int propertyId, DateTime checkIn, DateTime checkOut)
+        {
+            return !await _context.bookings
+                .AnyAsync(b => b.PropertyId == propertyId &&
+                              b.CheckOutDate > checkIn &&
+                              b.CheckInDte < checkOut);
         }
         public async Task<Property> GetByIdWithImagesAsync(int id)
         {

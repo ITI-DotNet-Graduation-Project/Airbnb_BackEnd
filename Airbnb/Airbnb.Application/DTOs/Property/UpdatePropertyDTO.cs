@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Airbnb.Application.DTOs.Property;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
@@ -31,18 +32,17 @@ public class UpdatePropertyDTO
     [Required(ErrorMessage = "PropertyType is required")]
     public string PropertyType { get; set; }
 
-    [Required(ErrorMessage = "Amenities are required")]
 
-    public string Amenities { get; set; }
+    [Required]
+    public int MaxGuest { get; set; }
 
-    [JsonIgnore]
-    public List<string> AmenitiesList =>
-        string.IsNullOrEmpty(Amenities)
-            ? new List<string>()
-            : JsonConvert.DeserializeObject<List<string>>(Amenities);
+
     [Required(ErrorMessage = "UserId is required")]
     public string UserId { get; set; }
 
     public List<string> DeletedImageIds { get; set; } = new List<string>();
     public List<IFormFile> NewImages { get; set; } = new List<IFormFile>();
+    public string AvailabilitiesJson { get; set; }
+
+    public List<AvailabilityDto> Availabilities { get; set; } = new();
 }

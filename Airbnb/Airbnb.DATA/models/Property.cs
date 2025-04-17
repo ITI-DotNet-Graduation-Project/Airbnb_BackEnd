@@ -14,7 +14,7 @@
         public int Bathrooms { get; set; }
 
 
-        public string Amenities { get; set; }
+
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
@@ -22,7 +22,8 @@
         public virtual ICollection<PropertyImage> PropertyImages { get; set; }
         public virtual ICollection<Review> Reviews { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
-        public virtual ICollection<Availability> Availabilities { get; set; }
+        public virtual ICollection<Availability> Availabilities { get; set; } = new List<Availability>();
+
 
         public int UserId { get; set; }
         public virtual User User { get; set; }

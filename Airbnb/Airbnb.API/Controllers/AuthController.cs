@@ -30,28 +30,8 @@ namespace MyEductaionManagementSystem.Controllers
                 title: error.Code, detail: error.Description)
             );
         }
-        [HttpPost("refresh")]
 
-        public async Task<IActionResult> RefreshAsync([FromBody] RefreshTakenRequest request)
-        {
-            var authResult = await _auhService.GetRefreshTokenAsync(request.Taken, request.RefreshTaken);
-            return authResult.Match(
-                Ok,
-                error => Problem(statusCode: error.StatusCode,
-                title: error.Code, detail: error.Description)
-            );
-        }
-        [HttpPut("revoke-refresh-token")]
 
-        public async Task<IActionResult> RevokeRefreshAsync([FromBody] RefreshTakenRequest request)
-        {
-            var isRevoked = await _auhService.RevokeRefreshTokenAsync(request.Taken, request.RefreshTaken);
-            return isRevoked.Match(
-                isRevoked => Ok("Refresh token revoked successfully"),
-                error => Problem(statusCode: StatusCodes.Status400BadRequest,
-                title: error.Code, detail: error.Description)
-            );
-        }
 
         [DisableRateLimiting]
         [HttpPost("register")]

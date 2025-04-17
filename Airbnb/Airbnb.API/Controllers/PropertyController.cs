@@ -2,6 +2,7 @@
 using Airbnb.Application.Services.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Security.Claims;
 
 
@@ -66,6 +67,7 @@ namespace Airbnb.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromForm] UpdatePropertyDTO propertyDto)
         {
+
             try
             {
                 if (!ModelState.IsValid)
@@ -90,7 +92,25 @@ namespace Airbnb.API.Controllers
                 {
                     propertyDto.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 }
+                _logger.LogError("Received Availabilities JSON: " + propertyDto.AvailabilitiesJson);
+                _logger.LogInformation($"Updted Received MaxGuests: {propertyDto.MaxGuest}");
+                if (!string.IsNullOrEmpty(propertyDto.AvailabilitiesJson))
+                {
+                    try
+                    {
+                        propertyDto.Availabilities = JsonConvert.DeserializeObject<List<AvailabilityDto>>(propertyDto.AvailabilitiesJson);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError("Error parsing Availabilities JSON", ex);
+                        return BadRequest("Invalid Availabilities format");
+                    }
+                }
 
+                if (propertyDto.Availabilities == null || propertyDto.Availabilities.Count == 0)
+                {
+                    return BadRequest("Availabilities are required");
+                }
                 await _propertyService.UpdatePropertyAsync(propertyDto);
                 return NoContent();
             }
@@ -109,8 +129,28 @@ namespace Airbnb.API.Controllers
             }
         }
         [HttpPost("create-property")]
-        public async Task<IActionResult> Create(CreatePropertyDTO dto)
+        public async Task<IActionResult> Create([FromForm] CreatePropertyDTO dto)
         {
+            _logger.LogError("Received Availabilities JSON: " + dto.AvailabilitiesJson);
+            _logger.LogInformation($"Received MaxGuests: {dto.MaxGuest}");
+            if (!string.IsNullOrEmpty(dto.AvailabilitiesJson))
+            {
+                try
+                {
+                    dto.Availabilities = JsonConvert.DeserializeObject<List<AvailabilityDto>>(dto.AvailabilitiesJson);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError("Error parsing Availabilities JSON", ex);
+                    return BadRequest("Invalid Availabilities format");
+                }
+            }
+
+            if (dto.Availabilities == null || dto.Availabilities.Count == 0)
+            {
+                return BadRequest("Availabilities are required");
+            }
+            _logger.LogError(dto.ToString());
             if (string.IsNullOrEmpty(dto.UserId))
             {
                 return BadRequest("User ID is required");
@@ -127,16 +167,6 @@ namespace Airbnb.API.Controllers
             }
         }
 
-        [HttpPut("update-property/{id}")]
-        public async Task<IActionResult> UpdateProperty(int id, UpdatePropertyDTO dto)
-        {
-            if (id != dto.Id) return BadRequest();
-
-            var result = await _propertyService.UpdateAsync(dto);
-            if (!result) return NotFound();
-
-            return NoContent();
-        }
 
         [HttpDelete("delete-property/{id}")]
         [Authorize]

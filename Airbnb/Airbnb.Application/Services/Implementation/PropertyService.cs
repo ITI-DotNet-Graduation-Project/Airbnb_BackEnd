@@ -5,8 +5,7 @@ using Airbnb.Infrastructure.Repos.Abstract;
 using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+using Microsoft.Extensions.Logging;
 
 namespace Airbnb.Application.Services.Implementation
 {
@@ -15,12 +14,14 @@ namespace Airbnb.Application.Services.Implementation
         private readonly IPropertyRepo _propertyRepo;
         private readonly IMapper _mapper; // use AutoMapper or map manually
         private readonly IWebHostEnvironment _environment;
+        private readonly ILogger<PropertyService> _logger;
 
-        public PropertyService(IPropertyRepo propertyRepo, IMapper mapper, IWebHostEnvironment environment)
+        public PropertyService(IPropertyRepo propertyRepo, IMapper mapper, IWebHostEnvironment environment, ILogger<PropertyService> logger)
         {
             _propertyRepo = propertyRepo;
             _mapper = mapper;
             _environment = environment;
+            _logger = logger;
         }
         public async Task<IEnumerable<PropertyDTO>> GetPropertiesByHost(string hostId)
         {
@@ -40,16 +41,29 @@ namespace Airbnb.Application.Services.Implementation
                 Bedrooms = propertyDto.Bedrooms,
                 Bathrooms = propertyDto.Bathrooms,
                 CategoryId = int.Parse(propertyDto.PropertyType),
-                Amenities = JsonConvert.SerializeObject(propertyDto.Amenities),
-                PropertyImages = new List<PropertyImage>(),
-                UserId = int.Parse(propertyDto.UserId)
-            };
 
+                Maxgeusts = propertyDto.MaxGuest,
+                PropertyImages = new List<PropertyImage>(),
+                UserId = int.Parse(propertyDto.UserId),
+
+            };
 
             foreach (var imageFile in propertyDto.Images)
             {
                 var imageUrl = await SaveImageAsync(imageFile);
                 property.PropertyImages.Add(new PropertyImage { ImageUrl = imageUrl });
+            }
+            _logger.LogError($"Availabilities Count: {propertyDto.Availabilities.Count}");
+
+            if (propertyDto.Availabilities != null && propertyDto.Availabilities.Count > 0)
+            {
+                property.Availabilities = propertyDto.Availabilities?.Select(a => new Availability
+                {
+                    StartDate = a.startDate,
+                    EndDate = a.endDate,
+                    IsBooked = a.isBooked,
+                }).ToList() ?? new List<Availability>();
+
             }
             await _propertyRepo.AddAsync(property);
 
@@ -70,7 +84,21 @@ namespace Airbnb.Application.Services.Implementation
             property.Bedrooms = propertyDto.Bedrooms;
             property.Bathrooms = propertyDto.Bathrooms;
             property.CategoryId = int.Parse(propertyDto.PropertyType);
-            property.Amenities = propertyDto.Amenities;
+            property.Maxgeusts = (propertyDto.MaxGuest);
+            //property.Availabilities = (propertyDto.Availabilities);
+            if (propertyDto.Availabilities != null && propertyDto.Availabilities.Any())
+            {
+                foreach (var availabilityDto in propertyDto.Availabilities)
+                {
+                    property.Availabilities.Add(new Availability
+                    {
+                        StartDate = (availabilityDto.startDate),
+                        EndDate = (availabilityDto.endDate),
+                        IsBooked = availabilityDto.isBooked,
+                        PropertyId = property.Id
+                    });
+                }
+            }
 
 
             await ProcessImageUpdates(property, propertyDto);
@@ -132,7 +160,7 @@ namespace Airbnb.Application.Services.Implementation
 
         public async Task<IEnumerable<PropertyDTO>> GetAllAsync()
         {
-            var properties = await _propertyRepo.GetTableNoTracking().ToListAsync();
+            var properties = await _propertyRepo.GetAllWithIncludesAsync();
             return _mapper.Map<IEnumerable<PropertyDTO>>(properties);
         }
 

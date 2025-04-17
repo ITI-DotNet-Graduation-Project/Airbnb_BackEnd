@@ -1,56 +1,53 @@
-﻿using Airbnb.Application.DTOs;
-using Airbnb.Application.DTOs.Review;
+﻿using Airbnb.Application.DTOs.Review;
 using Airbnb.Application.Services.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Airbnb.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ReviewController : ControllerBase
+    [Authorize]
+    public class ReviewsController : ControllerBase
     {
-        private readonly IReviewService _service;
+        private readonly IReviewService _reviewService;
 
-        public ReviewController(IReviewService service)
+        public ReviewsController(IReviewService reviewService)
         {
-            _service = service;
+            _reviewService = reviewService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("property/{propertyId}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<IEnumerable<ReviewDTO>>> GetReviewsForProperty(int propertyId)
         {
-            var reviews = await _service.GetAllAsync();
+            var reviews = await _reviewService.GetReviewsForProperty(propertyId);
             return Ok(reviews);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            var review = await _service.GetByIdAsync(id);
-            if (review == null) return NotFound();
-            return Ok(review);
-        }
-
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateReviewDTO dto)
+        public async Task<ActionResult<ReviewDTO>> AddReview([FromBody] CreateReviewDTO reviewDto)
         {
-            var created = await _service.CreateAsync(dto);
-            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+            try
+            {
+                var review = await _reviewService.AddReview(reviewDto, userId);
+                return CreatedAtAction(nameof(GetReviewsForProperty), new { propertyId = review.PropertyId }, review);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] UpdateReviewDTO dto)
+        [HttpGet("property/{propertyId}/average-rating")]
+        [AllowAnonymous]
+        public async Task<ActionResult<double>> GetAverageRating(int propertyId)
         {
-            if (id != dto.Id) return BadRequest("ID mismatch");
-            await _service.UpdateAsync(dto);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            await _service.DeleteAsync(id);
-            return NoContent();
+            var averageRating = await _reviewService.GetAverageRating(propertyId);
+            return Ok(averageRating);
         }
     }
 }
